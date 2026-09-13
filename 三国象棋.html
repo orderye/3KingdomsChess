@@ -62,6 +62,31 @@ button.on{background:#1e8449;border-color:#2ecc71}
 .center{text-align:center}
 #result-big{font-size:30px;color:var(--gold);margin:12px 0;letter-spacing:5px}
 .hidden{display:none!important}
+
+/* ===== 移动端横屏适配 ===== */
+@media (orientation:landscape) and (max-height:500px){
+  header{padding:4px 12px}
+  header h1{font-size:15px;letter-spacing:3px}
+  header .sub{font-size:10px}
+  main{padding:6px;gap:8px;flex-wrap:nowrap}
+  #board-wrap{flex:1 1 auto;min-width:0;gap:4px}
+  canvas{max-height:calc(100vh - 42px);max-height:calc(100dvh - 42px)}
+  .legend{font-size:10px;gap:8px}
+  .legend .dot{width:10px;height:10px}
+  #panel{width:240px;flex:0 0 240px;gap:6px}
+  .card{padding:8px}
+  .card h3{font-size:11px;margin-bottom:4px;padding-bottom:3px}
+  #turn{font-size:13px}
+  .side-row{font-size:11px;margin:2px 0}
+  .badge{padding:1px 7px;font-size:10px}
+  #log{max-height:120px;font-size:10px;line-height:1.5}
+  button{padding:6px 8px;font-size:11px}
+  .modal{padding:16px;max-width:92vw;max-height:88vh}
+  .modal h2{font-size:18px}
+  .pick button{padding:12px 6px;font-size:14px}
+  .rules{font-size:11px;line-height:1.6;padding:8px}
+  #result-big{font-size:22px}
+}
 </style>
 </head>
 <body>
